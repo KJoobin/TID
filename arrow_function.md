@@ -1,6 +1,6 @@
 ### ES6 Arrow function
 
-function cs arrow function : 기능은 달라지지 않음, 모양만 바뀜
+function vs arrow function : 기능은 달라지지 않음, 모양만 바뀜
 
 ```javascript
 const name = ['k','i','m'];
