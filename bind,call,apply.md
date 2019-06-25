@@ -84,8 +84,6 @@ console.log( cheese ) 			//Food {name: "feta", price: 5, category: "food"}
 console.log(fun)				//Toy {name : "robot", price : 40, category : "toy"}
 ```
 
-
-
 ### apply
 
 call 과 비슷하지만 arg1 arg2 … 을 배열로 받는다는 특징이 있다.
