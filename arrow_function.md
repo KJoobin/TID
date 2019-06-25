@@ -1,6 +1,6 @@
 ### ES6 Arrow function
 
-function cs arrow function : 기능은 달라지지 않음, 모양만 바뀜
+function vs arrow function : 기능은 달라지지 않음, 모양만 바뀜
 
 ```javascript
 const name = ['k','i','m'];
@@ -30,7 +30,7 @@ console.log(heart) 					//['k * ','i * ','m * '];
 **Arrow function 에서의 this **
 
 ```javascript
-const button = document.querySelector('burron');
+const button = document.querySelector('button');
 button.addEventListener('click',function() {
     this.innerHTML = 'change'					//this -> button But arrow function 을 사용할경우 this -> window;
 })
