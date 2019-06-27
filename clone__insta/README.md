@@ -19,5 +19,8 @@ require : npm, node ( -v10 이상 ), (git)
             }
             작성
 9. npm install @babel/{node, core, preset-env}
-( localhost:4000 작동 확인 ) 
-10. npm install morgan
+( localhost:4000 작동 확인 )
+
+10. npm install morgan ( logger 모듈;
+  logger --> 시스템 로그에 항목을 기록 )
+11. npm install graphql-tools merge-graphql-schemas
