@@ -8,7 +8,7 @@
    function makeCake(flavor) {
        return function() {
            setTimeOut(function() {
-               console.log("make ${flavor} cake")
+               console.log(`make ${flavor} cake`)
            },1000);
        }
    }
