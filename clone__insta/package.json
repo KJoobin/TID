@@ -1,0 +1,22 @@
+{
+  "name": "clone__insta",
+  "version": "1.0.0",
+  "description": "It's clone by instargram i will use react, react-native, node, Prisma, GraphQL ...",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "dotenv": "^8.0.0",
+    "graphql-yoga": "^1.18.0",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/server.js"
+  }
+}
