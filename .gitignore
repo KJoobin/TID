@@ -2,3 +2,5 @@
 T.I.W.D.md
 .gitignore
 node_modules
+generated
+prisma.yml
