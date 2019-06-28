@@ -1,4 +1,4 @@
-import { secretGenerator } from "../../../untils"
+import { secretGenerator } from "../../../utils"
 import { prisma } from "../../../../generated/prisma-client"
 
 export default {
