@@ -1,26 +1,38 @@
-It's clone by instargram
+          # It's clone by instargram
 i will use react, react-native, node, Prisma, GraphQL ...
-
 require : npm, node ( -v10 이상 ), (git)
 
-1. npm init
-2. npm install graphql-yoga
-3. npm install nodemon -D
-4. npm install bable-cli -D
-            5. src/server.js  파일 만들기
-            6. package.jsno 파일에
-            "scripts":{
-              "start" : "nodemon --exec bable-node src/server.js"
-            }
-            추가
-            7. nodemon.json 파일 생성
-            8. {
+          ## before Do it list
+-[ ] npm init
+-[ ] npm install graphql-yoga
+-[ ] npm install nodemon -D
+-[ ] npm install bable-cli -D
+-[ ] src/server.js  파일 만들기
+-[ ] package.jsno 파일에 추가
+      "scripts":{
+        "start" : "nodemon --exec bable-node src/server.js"
+      }
+-[ ] nodemon.json 파일 생성 / 작성
+-[ ] {
               "exit":"js graphql"
             }
-            작성
-9. npm install @babel/{node, core, preset-env}
-( localhost:4000 작동 확인 )
+-[ ] npm install @babel/{node, core, preset-env}
+-[ ] localhost:4000 작동 확인
+-[ ] npm install morgan ( logger 모듈; logger --> 시스템 로그에 항목을 기록 )
+-[ ] npm install graphql-tools merge-graphql-schemas
 
-10. npm install morgan ( logger 모듈;
-  logger --> 시스템 로그에 항목을 기록 )
-11. npm install graphql-tools merge-graphql-schemas
+      ## User Stories
+
+- [X] Create account
+- [ ] Like / Unlike a photo
+- [ ] Comment on a photo
+- [ ] Search by user
+- [ ] Search by location
+- [ ] See user profile
+- [ ] Follow / Unfollow User
+- [ ] See the full photo
+- [ ] Edit my profile
+- [ ] Log in
+- [ ] Upload a photo
+- [ ] Edit the photo (Delete)
+- [ ] See the feed

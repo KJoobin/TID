@@ -1,9 +1,9 @@
 type User {
   id: ID!
+  email: String!
   username: String!
   firstName: String
-  lastName: String
-  bio: String!
+  bio: String
   followerws: [User!]!
   following: [User!]!
   posts: [Post!]!
