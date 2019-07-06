@@ -13,8 +13,9 @@ const server = new GraphQLServer({ schema });
 
 server.express.use(logger("dev"));
 
-server.start({ port : PORT }, () =>
+server.start({ port : 4000 }, () =>
   console.log(`✅ Server running on http://localhost:${PORT}`)
 );
+
 // port : PORT 하면 alredy use err;
 // port : 4000 --> run why?
