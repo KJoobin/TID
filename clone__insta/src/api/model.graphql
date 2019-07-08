@@ -3,13 +3,17 @@ type User {
   email: String!
   username: String!
   firstName: String
+  fullName: String
   bio: String
   followerws: [User!]!
+  isFollowing: Boolean!
+  isSelf: Boolean!
   following: [User!]!
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
   rooms: [Room!]!
+  loginSecret: String!
 }
 
 type Post {
@@ -19,13 +23,14 @@ type Post {
   user: User!
   files: [File!]!
   likes: [Like!]!
+  isLiked: Boolean!
   comments: [Comment!]!
 }
 
 type Like {
   id: ID!
-  user: [User!]!
-  post: [Post!]!
+  user: User!
+  post: Post!
 }
 
 type Comment {
@@ -53,4 +58,9 @@ type Message {
   from: User!
   to: User!
   room: Room!
+}
+
+type UserProfile {
+  user: User!
+  posts: [Post!]!
 }
