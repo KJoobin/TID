@@ -1,0 +1,65 @@
+li:nth-child(even), li.target{
+  background-color: blue;
+}
+
+li:not(.target) {
+  background-color: red;
+}
+
+
+:root {
+  --defaultBorder : 1px solid yellow;
+}
+
+li:first-child a {
+  border: 1px solid yellow;
+  border: var(--defaultBorder);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color:red;
+}
+
+@media(min-width: 700px) and (max-width: 849px) {
+  body{
+    background-color: black;
+  }
+}
+
+
+
+ h1:hover{
+  color:hsl(60, 100%, 10%)
+}
+
+h2:hover{
+  color:rgb(119,119,119)
+}
+
+h3:hover{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif
+}
+
+
+main{
+  background-color: blue
+}
+
+
+main section {
+    width:100px;
+    background-color: red
+  }
+
+
+main section a {
+      font-size: 50px
+    }
+
+
+main section a:hover {
+        font-size:100px;
+      }
+
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */

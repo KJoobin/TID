@@ -1,0 +1,63 @@
+li:matches(:nth-child(even), .target){
+  background-color: blue;
+}
+
+li:not(.target) {
+  background-color: red;
+}
+
+
+:root {
+  --defaultBorder : 1px solid yellow;
+}
+
+li:first-child a {
+  border: var(--defaultBorder);
+}
+
+
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading {
+  color:red;
+}
+
+
+@custom-media --ipad-size (700px <= width < 850px);
+
+@media(--ipad-size) {
+  body{
+    background-color: black;
+  }
+}
+
+
+
+ h1:hover{
+  color:color-mod(yellow lightness(10%))
+}
+
+h2:hover{
+  color:gray(50)
+}
+
+h3:hover{
+  font-family: system-ui
+}
+
+
+main{
+  background-color: blue;
+
+  & section {
+    width:100px;
+    background-color: red;
+    & a {
+      font-size: 50px;
+      &:hover {
+        font-size:100px;
+      }
+    }
+  }
+}
