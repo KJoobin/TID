@@ -1,0 +1,17 @@
+.information {
+  margin-left:5px;
+  display:flex;
+  flex-direction: column;
+}
+
+
+.information a:first-child {
+  color: var(--navFontColor);
+  border-bottom: var(--navBoder);
+  margin-bottom: 10px;
+}
+
+.information a:not(:first-child) {
+  align-self:center;
+  margin-top:5px;
+}

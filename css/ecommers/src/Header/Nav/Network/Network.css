@@ -1,0 +1,16 @@
+.network {
+  margin-left:5px;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.network a:first-child {
+  color: var(--navFontColor);
+  border-bottom: var(--navBoder);
+  margin-bottom: 10px;
+}
+
+.network a:not(:first-child) {
+  margin-top:5px;
+}

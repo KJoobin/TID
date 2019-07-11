@@ -1,0 +1,4 @@
+.footer{
+  display:grid;
+  grid-template-template:repeat(5 1fr);
+}
