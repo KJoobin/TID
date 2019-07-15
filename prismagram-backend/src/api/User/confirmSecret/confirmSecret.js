@@ -9,7 +9,7 @@ export default {
       if(user.loginSecret === secret){
         await prisma.updateUser({
           where:{ email },
-          data:{ loginSecret: "" }
+          // data:{ loginSecret: "" }
         })
         return generateToken(user.id);
       } else {
