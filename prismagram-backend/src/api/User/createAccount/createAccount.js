@@ -8,7 +8,8 @@ export default {
         email,
         username,
         firstName,
-        bio
+        bio,
+        photo:"https://scontent-iad3-1.cdninstagram.com/vp/ba523e7703bfa4a2af716e67ea7aa12c/5DA39AF1/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com"
       })
       return true;
     } catch (err) {
