@@ -19,7 +19,7 @@ export default {
         },
         text
       });
-      return comment;
+      return true;
     }
   }
 };
