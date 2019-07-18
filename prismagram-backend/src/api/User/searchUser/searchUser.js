@@ -10,6 +10,6 @@ export default {
           { firstName_contains: args.term }
         ]
       }
-    });
+    })
   }
 };
