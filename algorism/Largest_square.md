@@ -67,5 +67,5 @@ function solution(board)
     return answer;
 }
 ```
-![find_sq](/Users/jb/Desktop/find_sq.jpeg)
+![find_sq](https://nearbyfriends.s3.ap-northeast-2.amazonaws.com/doc_img/find_sq.jpeg)
 
