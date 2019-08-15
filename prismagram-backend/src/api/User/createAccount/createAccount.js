@@ -16,8 +16,22 @@ export default {
         console.log(err);
         return false;
       }
-
-
+    }
+  },
+  Query: {
+    isOverlap: async(_, args) => {
+      try {
+        const { email } = args;
+        const user =  await prisma.user({email})
+        if(user === null) {
+          return false;
+        } else {
+          return true;
+        }
+      } catch (e) {
+        console.log(e);
+        return false;
+      }
     }
   }
 };

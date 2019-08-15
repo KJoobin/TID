@@ -6,6 +6,7 @@ export default {
       isAuthenticated(request);
       const { postId } = args;
       const { user } = request;
+      console.log(postId, user);
       const filterOptions = {
         AND: [
           {
@@ -22,6 +23,7 @@ export default {
       };
       try {
         const existingLike = await prisma.$exists.like(filterOptions);
+        console.log(existingLike);
         if(existingLike) {
           await prisma.deleteManyLikes(filterOptions);
         } else {

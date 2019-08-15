@@ -8,6 +8,7 @@ export default {
         OR: [
           {location_starts_with: args.term},
           {caption_starts_with: args.term},
+          {caption_ends_with: args.term}
         ]
       }
     })

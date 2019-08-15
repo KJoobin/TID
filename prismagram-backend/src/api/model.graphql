@@ -6,10 +6,13 @@ type User {
   fullName: String
   bio: String
   photo: String
+  postCount: Int
   followers: [User!]!
-  isFollowing: Boolean!
-  isSelf: Boolean!
   following: [User!]!
+  isFollowing: Boolean!
+  followingCount: Int
+  followerCount: Int
+  isSelf: Boolean!
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
@@ -28,6 +31,7 @@ type Post {
   likes: [Like!]!
   isLiked: Boolean!
   likeCount: Int!
+  commentCount: Int!
   comments: [Comment!]!
   createdAt: String
   updatedAt: String

@@ -6,16 +6,21 @@ export default {
       isAuthenticated(request);
       const { user } = request;
       const following = await prisma.user({ id: user.id}).following()
+      console.log(following.map(user => user.id));
         return prisma.posts({
           where:{
-            AND:{
-              user:{
-                id_in: following.map(user => user.id),
+            OR:[
+              {
+                user:{
+                  id_in: following.map(user => user.id),
+                }
               },
-              user:{
-                id : user.id
+              {
+                user:{
+                  id : user.id
+                }
               }
-            }
+            ]
           },
           orderBy: "createdAt_DESC"
         })

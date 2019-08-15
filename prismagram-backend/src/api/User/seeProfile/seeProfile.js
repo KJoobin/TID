@@ -4,9 +4,9 @@ import { isAuthenticated } from "../../../middlewares"
 export default {
   Query:{
     seeProfile: async (_, args) => {
-      const { id } = args;
-      const user = await prisma.user({ id })
-      const posts = await prisma.user({ id }).posts()
+      const { username } = args;
+      const user = await prisma.user({ username })
+      const posts = await prisma.user({ username }).posts()
       return {
         user,posts
       }

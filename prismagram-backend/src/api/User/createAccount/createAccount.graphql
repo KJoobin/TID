@@ -1,5 +1,7 @@
 type Query {
-  some: String!
+  isOverlap(
+    email: String!
+    ): Boolean!
 }
 
 type Mutation {

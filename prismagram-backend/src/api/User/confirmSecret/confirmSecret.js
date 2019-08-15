@@ -9,7 +9,8 @@ export default {
       if(user.loginSecret === secret){
         return generateToken(user.id);
       } else {
-         throw Error("Wrong eamil/secret combination ")
+         console.log("Wrong eamil/secret combination ")
+         return false;
       }
     }
   }
