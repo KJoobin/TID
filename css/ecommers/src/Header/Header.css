@@ -1,6 +1,0 @@
-.Header {
-  display:grid;
-  grid-template-columns: 1fr 2fr 0.5fr;
-  margin-top:20px;
-  height:100%;
-}
